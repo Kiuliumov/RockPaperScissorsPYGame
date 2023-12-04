@@ -24,8 +24,10 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :-------------------------------------
 @echo off
-:loop
+
+:mainLoop
 python3 game.py
-timeout /t 5 /nobreak >nul
+echo Press any key to restart the program...
+pause > nul
 cls
-goto loop
+goto mainLoop

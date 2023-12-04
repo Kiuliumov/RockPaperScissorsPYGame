@@ -12,11 +12,10 @@ except FileNotFoundError:
 game_outcome = ''
 user_input = input('Enter a choice (rock, paper, or scissors): ')
 possible_moves = ['rock', 'paper', 'scissors']
-
+computer_move = random.choice(possible_moves)
 if user_input not in possible_moves:
-    print("Choose a valid move!\nThe valid moves are rock, paper, or scissors!\n'")
+    print("Choose a valid move!\nThe valid moves are rock, paper, or scissors!")
 else:
-    computer_move = random.choice(possible_moves)
     print(f'You chose {user_input}\nThe computer chose {computer_move}')
 
     if computer_move == user_input:
@@ -38,11 +37,11 @@ else:
             print('You lose!')
     elif computer_move == 'scissors':
         if user_input == 'rock':
-            game_outcome = 'lose'
-            print('You lose!')
-        elif user_input == 'paper':
             game_outcome = 'win'
             print('You win!')
+        elif user_input == 'paper':
+            game_outcome = 'lose'
+            print('You lose!')
 
 if game_outcome == 'win':
     prev_wins += 1

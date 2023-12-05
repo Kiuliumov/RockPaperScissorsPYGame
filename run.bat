@@ -26,7 +26,7 @@ if '%errorlevel%' NEQ '0' (
 
 :mainLoop
 python3 game.py
-echo Press any key to restart the program...
+echo Press any key to restart the game...
 pause > nul
 cls
 goto mainLoop

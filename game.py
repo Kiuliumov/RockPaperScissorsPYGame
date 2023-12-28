@@ -13,6 +13,7 @@ game_outcome = ''
 user_input = input('Enter a choice (rock, paper, or scissors): ')
 possible_moves = ['rock', 'paper', 'scissors']
 computer_move = random.choice(possible_moves)
+user_input = user_input.lower()
 if user_input not in possible_moves:
     print("Choose a valid move!\nThe valid moves are rock, paper, or scissors!")
 else:

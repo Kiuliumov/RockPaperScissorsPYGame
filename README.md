@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors Game
+# Rock-Paper-Scissors Gam
 
 A simple rock-paper-scissors game with basic statistics tracking.
 
